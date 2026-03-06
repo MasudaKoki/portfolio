@@ -10,93 +10,97 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <!-- 1段目 -->
-        <div class="header-row header-top">
-            <div class="header-inner">
-                <div class="header-left"></div>
+  <header class="site-header">
+    <!-- 1段目 -->
+    <div class="header-row header-top">
+      <div class="header-inner">
+        <div class="header-left"></div>
 
-                <h1 class="logo"><a href="index.html"><img src="img/logo.svg" alt="LENTO"></a></h1>
+        <h1 class="logo"><a href="index.html"><img src="img/logo_br.svg" alt="LENTO"></a></h1>
 
-                <div class="header-right">
-                    <!-- SP 検索 -->
-                    <button class="sp-search-trigger sp-only" id="searchBtn">
-                        🔍
-                    </button>
+        <div class="header-right">
+          <!-- SP 検索 -->
+          <button class="sp-search-trigger sp-only" id="searchBtn">
+            <span class="dli-search"></span>
+          </button>
 
-                    <form class="search-form pc-only">
-                        <input type="search" placeholder="キーワードを入力">
-                    </form>
+          <form class="search-form pc-only">
+            <input type="search" placeholder="キーワードを入力">
+          </form>
 
-                    <button class="hamburger sp-only" id="menuBtn">
-                        <span></span><span></span><span></span>
-                    </button>
-                </div>
-
-            </div>
+          <button class="hamburger sp-only" id="menuBtn">
+            <span></span><span></span><span></span>
+          </button>
         </div>
 
-        <!-- 2段目 -->
-        <div class="header-row header-bottom pc-only">
-            <div class="header-inner">
-                <nav class="global-nav">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li class="has-dropdown">
-                            <span class="drawer-trigger">CATEGORY</span>
+      </div>
+    </div>
 
-                            <!-- ▼ PCドロワーメニュー -->
-                            <div class="dropdown">
-                                <ul>
-                                    <li><a href="#">Chair</a></li>
-                                    <li><a href="#">Table</a></li>
-                                    <li><a href="#">Sofa</a></li>
-                                    <li><a href="#">Lighting</a></li>
-                                    <li><a href="#">Rug</a></li>
-                                    <li><a href="#">Storage</a></li>
-                                    <li><a href="#">Object</a></li>
-                                </ul>
-                            </div>
-                            <!-- ▲ PCドロワーメニュー -->
-
-                        </li>
-                        <li><a href="#">FEATURE</a></li>
-                        <li><a href="#">JOURNAL</a></li>
-                        <li><a href="#">法人向け</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-icons">
-                    <a href="#" class="icon">MY</a>
-                    <a href="#" class="icon">CART</a>
-                </div>
-            </div>
-        </div>
-        <div class="sp-search" id="spSearch">
-            <form class="search-form">
-                <input type="search" placeholder="キーワードを入力">
-            </form>
-        </div>
-    </header>
-
-    <!-- SP MENU -->
-    <nav class="sp-menu" id="spMenu">
-        <ul class="sp-menu-list">
-            <li>
-                <button class="sp-accordion">CATEGORY<span></span></button>
-                <ul class="sp-submenu">
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Lighting</a></li>
-                    <li><a href="#">Living</a></li>
+    <!-- 2段目 -->
+    <div class="header-row header-bottom pc-only">
+      <div class="header-inner">
+        <nav class="global-nav">
+          <ul>
+            <li class="has-dropdown">
+              <span class="drawer-trigger">PRODUCTS</span>
+              <!-- ▼ PCドロワーメニュー -->
+              <div class="dropdown">
+                <ul>
+                  <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                  <li><a href="#">Chair</a></li>
+                  <li><a href="#">Table</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Lighting</a></li>
+                  <li><a href="#">Storage</a></li>
+                  <li><a href="#">Accessory</a></li>
                 </ul>
+              </div>
+              <!-- ▲ PCドロワーメニュー -->
+
             </li>
             <li><a href="#">FEATURE</a></li>
-            <li><a href="#">JOURNAL</a></li>
-            <li><a href="#">法人向け</a></li>
+            <li><a href="#">STYLING HINT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
             <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons">
+          <a href="#" class="icon"><span class="dli-user"></span></a>
+          <a href="#" class="icon"><span class="dli-cart"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="sp-search" id="spSearch">
+      <form class="search-form">
+        <input type="search" placeholder="キーワードを入力">
+      </form>
+    </div>
+  </header>
+
+  <!-- SP MENU -->
+  <nav class="sp-menu" id="spMenu">
+    <ul class="sp-menu-list">
+      <li>
+        <button class="sp-accordion">PRODUCTS<span></span></button>
+        <ul class="sp-submenu">
+          <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+          <li><a href="#">Chair</a></li>
+          <li><a href="#">Table</a></li>
+          <li><a href="#">Sofa</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Accessory</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="#">FEATURE</a></li>
+      <li><a href="#">STYLING HINT</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
 
     <main class="lento-feature">
 
