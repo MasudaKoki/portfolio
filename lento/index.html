@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LENTO｜Take life a little slower.</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <!-- 1段目 -->
+    <div class="header-row header-top">
+      <div class="header-inner">
+        <div class="header-left"></div>
+
+        <h1 class="logo"><a href="index.html"><img src="/img/logo_br.svg" alt="LENTO"></a></h1>
+
+        <div class="header-right">
+          <!-- SP 検索 -->
+          <button class="sp-search-trigger sp-only" id="searchBtn">
+            <span class="dli-search"></span>
+          </button>
+
+          <form class="search-form pc-only">
+            <input type="search" placeholder="キーワードを入力">
+          </form>
+
+          <button class="hamburger sp-only" id="menuBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2段目 -->
+    <div class="header-row header-bottom pc-only">
+      <div class="header-inner">
+        <nav class="global-nav">
+          <ul>
+            <li class="has-dropdown">
+              <span class="drawer-trigger">PRODUCTS</span>
+              <!-- ▼ PCドロワーメニュー -->
+              <div class="dropdown">
+                <ul>
+                  <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                  <li><a href="#">Chair</a></li>
+                  <li><a href="#">Table</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Lighting</a></li>
+                  <li><a href="#">Storage</a></li>
+                  <li><a href="#">Accessory</a></li>
+                </ul>
+              </div>
+              <!-- ▲ PCドロワーメニュー -->
+
+            </li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">STYLING HINT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons">
+          <a href="#" class="icon"><span class="dli-user"></span></a>
+          <a href="#" class="icon"><span class="dli-cart"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="sp-search" id="spSearch">
+      <form class="search-form">
+        <input type="search" placeholder="キーワードを入力">
+      </form>
+    </div>
+  </header>
+
+  <!-- SP MENU -->
+  <nav class="sp-menu" id="spMenu">
+    <ul class="sp-menu-list">
+      <li>
+        <button class="sp-accordion">PRODUCTS<span></span></button>
+        <ul class="sp-submenu">
+          <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+          <li><a href="#">Chair</a></li>
+          <li><a href="#">Table</a></li>
+          <li><a href="#">Sofa</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Accessory</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FEATURE</a></li>
+      <li><a href="#">STYLING HINT</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ================= HERO（既存クラス変更なし） ================= -->
+    <section class="hero-slider">
+      <div class="hero-slider-track">
+
+        <a href="#" class="hero-slide active">
+          <picture>
+            <source srcset="img/main_visual_sp_01.jpg" media="(max-width:768px)">
+            <img src="img/main_visual_01.jpg">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source srcset="img/main_visual_sp_02.jpg" media="(max-width:768px)">
+            <img src="img/main_visual_02.jpg">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source srcset="img/main_visual_sp_03.jpg" media="(max-width:768px)">
+            <img src="img/main_visual_03.jpg">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source
+              srcset="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=750&q=80"
+              media="(max-width:768px)">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1920&q=80">
+          </picture>
+        </a>
+
+      </div>
+    </section>
+
+    <div class="hero-dots">
+      <button class="dot active"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+    </div>
+
+
+    <!-- ================= FEATURE ================= -->
+    <section class="feature fade container">
+      <h2 class="section-title">FEATURE
+        <span class="section-title-sub">特集</span>
+      </h2>
+
+      <div class="feature-grid">
+
+        <a href="feature_02.html" class="feature-item">
+          <div class="img-wrap">
+            <img src="img/feature_thum_01.jpg" alt="小さな変化で、季節が動く。">
+          </div>
+          <p class="feature-copy">小さな変化で、季節が動く</p>
+        </a>
+
+        <a href="feature_01.html" class="feature-item">
+          <div class="img-wrap">
+            <img src="img/feature_thum_02.jpg"
+              alt="Refresh Your Space — Spring 2026">
+          </div>
+          <p class="feature-copy">Refresh Your Space — Spring 2026</p>
+        </a>
+
+        <a href="feature3.html" class="feature-item">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f" alt="春の模様替え">
+          </div>
+          <p class="feature-copy">春の模様替え</p>
+        </a>
+
+        <a href="feature4.html" class="feature-item">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="新生活インテリア">
+          </div>
+          <p class="feature-copy">新生活インテリア</p>
+        </a>
+      </div>
+      <a href="archive.html" class="btn">VIEW MORE</a>
+    </section>
+
+
+
+    <!-- ================= NEW ARRIVALS ================= -->
+    <section class="new-arrivals">
+      <div class="container">
+        <h2 class="section-title">NEW ARRIVALS
+          <span class="section-title-sub">新着商品</span>
+        </h2>
+        <div class="arrivals-wrapper">
+          <div class="arrivals-track">
+            <!-- 1 -->
+            <a href="glass-table.html" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_glass-table.jpg" alt="FRAME Glass Low Table">
+              </div>
+              <p class="arrival-name">FRAME Glass Low Table</p>
+              <p class="arrival-price">¥96,800</p>
+            </a>
+
+            <!-- 2 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_stool01.jpg" alt="Counter High Stool">
+              </div>
+              <p class="arrival-name">Counter High Stool</p>
+              <p class="arrival-price">¥32,800</p>
+            </a>
+
+            <!-- 3 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_leather-sofa01.jpg" alt="Leather Sofa">
+              </div>
+              <p class="arrival-name">Leather Sofa</p>
+              <p class="arrival-price">¥244,500</p>
+            </a>
+
+            <!-- 4 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_floorlamp.jpg" alt="Modern Floor Lamp">
+              </div>
+              <p class="arrival-name">Modern Floor Lamp</p>
+              <p class="arrival-price">¥48,900</p>
+            </a>
+
+            <!-- 5 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_poster01.jpg" alt="Textile Poster">
+              </div>
+              <p class="arrival-name">Textile Poster</p>
+              <p class="arrival-price">¥8,900</p>
+            </a>
+
+            <!-- 6 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_fabric-sofa01.jpg" alt="Fabric Sofa">
+              </div>
+              <p class="arrival-name">Fabric Sofa</p>
+              <p class="arrival-price">¥136,800</p>
+            </a>
+
+            <!-- 7 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_glass-desk.jpg" alt="Writing Design Desk">
+              </div>
+              <p class="arrival-name">Writing Design Desk</p>
+              <p class="arrival-price">¥289,000</p>
+            </a>
+
+            <!-- 8 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_coffee-table.jpg" alt="Steal Coffee table">
+              </div>
+              <p class="arrival-name">Steal Coffee table</p>
+              <p class="arrival-price">¥89,500</p>
+            </a>
+
+            <!-- 9 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_cabinet01.jpg" alt="Stone Motif Cabinet">
+              </div>
+              <p class="arrival-name">Stone Motif Cabinet</p>
+              <p class="arrival-price">¥121,000</p>
+            </a>
+
+            <!-- 10 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_floorlamp02.jpg" alt="Artistic Floor Lamp">
+              </div>
+              <p class="arrival-name">Artistic Floor Lamp</p>
+              <p class="arrival-price">¥77,800</p>
+            </a>
+
+            <!-- 11 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_poster02.jpg" alt="Monotone Art Poster">
+              </div>
+              <p class="arrival-name">Monotone Art Poster</p>
+              <p class="arrival-price">¥7,600</p>
+            </a>
+
+            <!-- 12 -->
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_mirror.jpg" alt="Wall Mirror">
+              </div>
+              <p class="arrival-name">Wall Mirror</p>
+              <p class="arrival-price">¥24,300</p>
+            </a>
+          </div>
+        </div>
+        <div class="arrivals-dots"></div>
+        <!-- VIEW ALL -->
+        <a href="new-arrivals.html" class="btn">VIEW MORE</a>
+      </div>
+    </section>
+
+    <!-- ================= RANKING（5カラム固定） ================= -->
+    <section class="ranking">
+      <div class="container">
+
+        <h2 class="section-title">RANKING
+          <span class="section-title-sub">ランキング</span>
+        </h2>
+
+        <!-- PC表示（5列固定） -->
+        <div class="ranking-grid pc-only">
+          <a href="glass-table.html" class="ranking-item">
+            <span class="ranking-number">01</span>
+            <div class="img-wrap">
+              <img src="img/thum_glass-table.jpg" alt="FRAME Glass Low Table">
+            </div>
+            <p class="arrival-name">FRAME Glass Low Table</p>
+            <p class="arrival-price">¥98,000</p>
+          </a>
+          <a href="#" class="ranking-item">
+            <span class="ranking-number">02</span>
+            <div class="img-wrap">
+              <img src="img/thum_fabric-sofa01.jpg" alt="Fabric Sofa">
+            </div>
+            <p class="arrival-name">Fabric Sofa</p>
+            <p class="arrival-price">¥132,800</p>
+          </a>
+          <a href="#" class="ranking-item">
+            <span class="ranking-number">03</span>
+            <div class="img-wrap">
+              <img src="img/thum_mirror.jpg" alt="Wall Mirror">
+            </div>
+            <p class="arrival-name">Wall Mirror</p>
+            <p class="arrival-price">¥24,300</p>
+          </a>
+          <a href="#" class="ranking-item">
+            <span class="ranking-number">04</span>
+            <div class="img-wrap">
+              <img src="img/thum_cabinet01.jpg" alt="Stone Motif Cabinet">
+            </div>
+            <p class="arrival-name">Stone Motif Cabinet</p>
+            <p class="arrival-price">¥121,000</p>
+          </a>
+          <a href="#" class="ranking-item">
+            <span class="ranking-number">05</span>
+            <div class="img-wrap">
+              <img src="img/thum_coffee-table.jpg" alt="Steal Coffee table">
+            </div>
+            <p class="arrival-name">Steal Coffee table</p>
+            <p class="arrival-price">¥89,500</p>
+          </a>
+
+        </div>
+        <!-- SP表示（NEW ARRIVALS流用） -->
+        <div class="ranking-slider sp-only">
+          <div class="arrivals-wrapper">
+            <div class="arrivals-track">
+              <a href="glass-table.html" class="arrival-item ranking-item">
+                <span class="ranking-number">01</span>
+                <div class="img-wrap">
+                  <img src="img/thum_glass-table.jpg" alt="FRAME Glass Low Table">
+                </div>
+                <p class="arrival-name">FRAME Glass Low Table</p>
+                <p class="arrival-price">¥96,800</p>
+              </a>
+              <a href="#" class="arrival-item ranking-item">
+                <span class="ranking-number">02</span>
+                <div class="img-wrap">
+                  <img src="img/thum_fabric-sofa01.jpg" alt="Fabric Sofa">
+                </div>
+                <p class="arrival-name">Fabric Sofa</p>
+                <p class="arrival-price">¥132,800</p>
+              </a>
+              <a href="#" class="arrival-item ranking-item">
+                <span class="ranking-number">03</span>
+                <div class="img-wrap">
+                  <img src="img/thum_mirror.jpg" alt="Wall Mirror">
+                </div>
+                <p class="arrival-name">Wall Mirror</p>
+                <p class="arrival-price">¥24,300</p>
+              </a>
+              <a href="#" class="arrival-item ranking-item">
+                <span class="ranking-number">04</span>
+                <div class="img-wrap">
+                  <img src="img/thum_cabinet01.jpg" alt="Stone Motif Cabinet">
+                </div>
+                <p class="arrival-name">Stone Motif Cabinet</p>
+                <p class="arrival-price">¥121,000</p>
+              </a>
+              <a href="#" class="arrival-item ranking-item">
+                <span class="ranking-number">05</span>
+                <div class="img-wrap">
+                  <img src="img/thum_coffee-table.jpg" alt="Steal Coffee table">
+                </div>
+                <p class="arrival-name">Steal Coffee table</p>
+                <p class="arrival-price">¥89,500</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="arrivals-dots ranking-dots"></div>
+        </div>
+        <a href="archive.html" class="btn">VIEW MORE</a>
+      </div>
+    </section>
+
+    <!-- ================= STYLING（削らない） ================= -->
+    <section class="styling fade container">
+      <h2 class="section-title">STYLING HINT
+        <span class="section-title-sub">スタイリングヒント</span>
+      </h2>
+      <p class="section-description">
+        季節や空間に寄り添うスタイリングのヒント。暮らしを少しだけ豊かにするアイデアをご紹介します。
+      </p>
+      <div class="styling-grid">
+        <a href="#"><img src="img/styling08.jpg" alt="STYLING HINT 01"></a>
+        <a href="#"><img src="img/styling02.jpg" alt="STYLING HINT 02"></a>
+        <a href="#"><img src="img/styling03.jpg" alt="STYLING HINT 03"></a>
+        <a href="#"><img src="img/styling04.jpg" alt="STYLING HINT 04"></a>
+        <a href="#"><img src="img/styling05.jpg" alt="STYLING HINT 05"></a>
+        <a href="#"><img src="img/styling06.jpg" alt="STYLING HINT 06"></a>
+        <a href="#"><img src="img/styling07.jpg" alt="STYLING HINT 07"></a>
+        <a href="#"><img src="img/styling01.jpg" alt="STYLING HINT 08"></a>
+      </div>
+      <a href="#" class="btn">VIEW MORE</a>
+    </section>
+
+    <!-- ================= NEWS（topNews仕様・サムネなし） ================= -->
+    <section class="news fade container">
+      <div class="news-container">
+        <h2 class="section-title">NEWS
+          <span class="section-title-sub">ニュース</span>
+        </h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2026.02.01</span>
+            <a href="#">Spring Collection 2026 公開のお知らせ</a>
+          </li>
+          <li>
+            <span class="news-date">2026.01.15</span>
+            <a href="#">一部商品価格改定のご案内</a>
+          </li>
+          <li>
+            <span class="news-date">2026.01.05</span>
+            <a href="#">新生活シーズン特集公開</a>
+          </li>
+        </ul>
+        <a href="archive.html" class="btn">VIEW MORE</a>
+      </div>
+    </section>
+
+    <!-- ================= About LENTO ================= -->
+    <section class="about fade container">
+      <div class="about-box">
+        <div class="about-image">
+          <img src="img/about_thum.jpg">
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">ABOUT LENTO
+            <span class="section-title-sub">LENTOについて</span>
+          </h2>
+          <p>
+            LENTOは、静かで心地よい暮らしを提案するインテリアショップです。
+            流行に流されすぎない普遍的なデザインと、
+            長く使える品質を大切にしています。
+          </p>
+          <p>
+            家具・照明・ファブリックを通して、
+            空間を整える楽しさを届けます。
+          </p>
+          <a href="about.html" class="btn">READ MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact fade">
+      <div class="contact-text">
+        <h2>CONTACT</h2>
+        <p>ご質問・ご相談はこちらから<br>店舗・オフィス・空間演出など法人様向けのご提案を行っています。</p>
+        <a href="#" class="btn">お問い合わせ</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© LENTO</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

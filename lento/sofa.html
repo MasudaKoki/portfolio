@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LENTO｜Take life a little slower.</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <!-- 1段目 -->
+        <div class="header-row header-top">
+            <div class="header-inner">
+                <div class="header-left"></div>
+
+                <h1 class="logo">LENTO</h1>
+
+                <div class="header-right">
+                    <!-- SP 検索 -->
+                    <button class="sp-search-trigger sp-only" id="searchBtn">
+                        🔍
+                    </button>
+
+                    <form class="search-form pc-only">
+                        <input type="search" placeholder="キーワードを入力">
+                    </form>
+
+                    <button class="hamburger sp-only" id="menuBtn">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2段目 -->
+        <div class="header-row header-bottom pc-only">
+            <div class="header-inner">
+                <nav class="global-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="has-dropdown">
+                            <span class="drawer-trigger">CATEGORY</span>
+
+                            <!-- ▼ PCドロワーメニュー -->
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Chair</a></li>
+                                    <li><a href="#">Table</a></li>
+                                    <li><a href="#">Sofa</a></li>
+                                    <li><a href="#">Lighting</a></li>
+                                    <li><a href="#">Rug</a></li>
+                                    <li><a href="#">Storage</a></li>
+                                    <li><a href="#">Object</a></li>
+                                </ul>
+                            </div>
+                            <!-- ▲ PCドロワーメニュー -->
+
+                        </li>
+                        <li><a href="#">FEATURE</a></li>
+                        <li><a href="#">JOURNAL</a></li>
+                        <li><a href="#">法人向け</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <a href="#" class="icon">MY</a>
+                    <a href="#" class="icon">CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="sp-search" id="spSearch">
+            <form class="search-form">
+                <input type="search" placeholder="キーワードを入力">
+            </form>
+        </div>
+    </header>
+
+    <!-- SP MENU -->
+    <nav class="sp-menu" id="spMenu">
+        <ul class="sp-menu-list">
+            <li>
+                <button class="sp-accordion">CATEGORY<span></span></button>
+                <ul class="sp-submenu">
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Living</a></li>
+                </ul>
+            </li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">法人向け</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+<main class="product-page">
+
+  <section class="product-main container">
+
+    <!-- ギャラリー -->
+    <div class="product-gallery">
+      <figure class="main-image">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Elephant Sofa">
+      </figure>
+
+      <ul class="thumb-list">
+        <li><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"></li>
+        <li><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36"></li>
+        <li><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"></li>
+      </ul>
+    </div>
+
+    <!-- 商品 Info -->
+    <div class="product-info">
+
+      <h1 class="product-title">Elephant Sofa シェーズロング</h1>
+
+      <p class="product-designer">Karimoku New Standard</p>
+
+      <p class="product-price">¥281,600</p>
+
+      <form class="product-options">
+
+        <div class="option-group">
+          <label>カラー・張地</label>
+          <select>
+            <option>メリット</option>
+            <option>モード</option>
+            <option>スティールカット トリオ</option>
+            <option>ラフ・シモンズ ヴィダー</option>
+          </select>
+        </div>
+
+      </form>
+
+      <p class="stock-status">SOLD OUT</p>
+
+      <div class="purchase-actions">
+        <div class="quantity">
+          <label>数量</label>
+          <input type="number" min="1" value="1">
+        </div>
+
+        <button class="btn-add-cart" disabled>カートに入れる</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn-wishlist">お気に入りに追加</button>
+        <button class="btn-inquiry">この商品について問い合わせる</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- <section class="product-details-block container">
+
+    <div class="detail-section">
+      <h2>ABOUT</h2>
+      <p>Elephant Sofa（エレファントソファ）は、シンプルさとエレガントさを兼ね備え、多彩な張地のバリエーションを持ち、プライベート空間とパブリックスペースのどちらにも使えるようデザインされています。カーブしたアームレストはリラックスでき、また、いろいろな座り方を楽しめます。無垢のクリ材から削りだされた脚部など、手の込んだディテールを持つフレームと耐久性のあるポケットコイル、高品質のウレタンフォームを使用した丈夫で快適な構成です。</p>
+    </div>
+
+    <div class="detail-section">
+      <h2>SIZE & MATERIAL</h2>
+      <ul>
+        <li>サイズ: W150 x D85 x H66cm / SH39cm</li>
+        <li>材質: チェストナット材、ポケットコイル、ウレタンフォーム</li>
+        <li>重量: 約45kg</li>
+        <li>保証: 3年間（メーカー規定に準ずる）</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h2>SHIPPING & DELIVERY</h2>
+      <ul>
+        <li>送料: 本州・四国・九州 無料 / 北海道・沖縄 別途</li>
+        <li>納期目安: 約1〜2 ヶ月（在庫状況による）</li>
+        <li>備考: 搬入経路の確認をおすすめします</li>
+      </ul>
+    </div>
+
+  </section> -->
+
+  <section class="product-tabs container">
+    <div class="tabs-header">
+      <button data-tab="description" class="tab-btn active">商品説明</button>
+      <button data-tab="details" class="tab-btn">仕様・サイズ</button>
+      <button data-tab="shipping" class="tab-btn">送料・納期</button>
+    </div>
+
+    <div class="tab-content active container" id="description">
+      <p>
+        Elephant Sofa（エレファントソファ）は、シンプルさとエレガントさを兼ね備えたモダンデザインソファです。  
+        広々とした座面とゆったりとしたクッションは、長時間の使用でも快適さを保ちます。上質なウレタンフォームと耐久性のあるポケットコイルスプリングを採用し、身体を優しく支えます。  
+        フレームには無垢材を使用し丁寧な仕上げが施されており、飽きのこない洗練されたルックスでどんなインテリアにも調和します。
+      </p>
+      <p>
+        カーブしたアームレストは多様な座り方を可能にし、リラックスタイムをより豊かにします。  
+        プライベート空間やパブリック空間のどちらでも存在感を放つエレガントな佇まいで、空間のグレードを引き上げます。  
+      </p>
+    </div>
+
+    <div class="tab-content container" id="details">
+      <ul>
+        <li>サイズ：W150 × D85 × H66cm</li>
+        <li>座面高：SH39cm</li>
+        <li>素材：クリ材／ウレタンフォーム</li>
+        <li>重量：約45kg</li>
+        <li>保証期間：3年間</li>
+        <li>カラー：ペールナチュラル／ブラック／グレー</li>
+      </ul>
+    </div>
+
+    <div class="tab-content container" id="shipping">
+      <ul>
+        <li>送料：全国一律 880円（¥10,000 以上購入で無料）</li>
+        <li>納期：在庫ありの場合 約1〜2 週間程度</li>
+        <li>大型家具の搬入・設置・搬出サービスは別途見積り</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="related-products container">
+    <h2>Related Items</h2>
+    <ul class="product-grid">
+      <li class="product-card">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36">
+        <p class="product-name">Modern Chair</p>
+        <p class="price">¥45,000</p>
+      </li>
+      <li class="product-card">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+        <p class="product-name">Lounge Table</p>
+        <p class="price">¥88,000</p>
+      </li>
+      <li class="product-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+        <p class="product-name">Accent Lamp</p>
+        <p class="price">¥22,000</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+
+
+
+    <footer class="footer">
+        <p>© LENTO</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LENTO｜Take life a little slower.</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <!-- 1段目 -->
+    <div class="header-row header-top">
+      <div class="header-inner">
+        <div class="header-left"></div>
+
+        <h1 class="logo">LENTO</h1>
+
+        <div class="header-right">
+          <!-- SP 検索 -->
+          <button class="sp-search-trigger sp-only" id="searchBtn">
+            🔍
+          </button>
+
+          <form class="search-form pc-only">
+            <input type="search" placeholder="キーワードを入力">
+          </form>
+
+          <button class="hamburger sp-only" id="menuBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2段目 -->
+    <div class="header-row header-bottom pc-only">
+      <div class="header-inner">
+        <nav class="global-nav">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li class="has-dropdown">
+              <span class="drawer-trigger">CATEGORY</span>
+
+              <!-- ▼ PCドロワーメニュー -->
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Chair</a></li>
+                  <li><a href="#">Table</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Lighting</a></li>
+                  <li><a href="#">Rug</a></li>
+                  <li><a href="#">Storage</a></li>
+                  <li><a href="#">Object</a></li>
+                </ul>
+              </div>
+              <!-- ▲ PCドロワーメニュー -->
+
+            </li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">JOURNAL</a></li>
+            <li><a href="#">法人向け</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons">
+          <a href="#" class="icon">MY</a>
+          <a href="#" class="icon">CART</a>
+        </div>
+      </div>
+    </div>
+    <div class="sp-search" id="spSearch">
+      <form class="search-form">
+        <input type="search" placeholder="キーワードを入力">
+      </form>
+    </div>
+  </header>
+
+  <!-- SP MENU -->
+  <nav class="sp-menu" id="spMenu">
+    <ul class="sp-menu-list">
+      <li>
+        <button class="sp-accordion">CATEGORY<span></span></button>
+        <ul class="sp-submenu">
+          <li><a href="#">Furniture</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Living</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FEATURE</a></li>
+      <li><a href="#">JOURNAL</a></li>
+      <li><a href="#">法人向け</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-slider">
+      <div class="hero-slider-track">
+
+        <a href="#" class="hero-slide active">
+          <picture>
+            <source
+              srcset="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=750&q=80"
+              media="(max-width:768px)">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1920&q=80">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source
+              srcset="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=750&q=80"
+              media="(max-width:768px)">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=80">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source
+              srcset="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=750&q=80"
+              media="(max-width:768px)">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1920&q=80">
+          </picture>
+        </a>
+
+        <a href="#" class="hero-slide">
+          <picture>
+            <source
+              srcset="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=750&q=80"
+              media="(max-width:768px)">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1920&q=80">
+          </picture>
+        </a>
+
+      </div>
+    </section>
+
+    <div class="hero-dots">
+      <button class="dot active"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section fade">
+      <h3 class="section-title">NEW ARRIVALS</h3>
+
+      <div class="product-list">
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
+          <p class="product-name">Wood Chair</p>
+          <p class="price">¥32,000</p>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+          <p class="product-name">Linen Sofa</p>
+          <p class="price">¥128,000</p>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+          <p class="product-name">Table Lamp</p>
+          <p class="price">¥24,000</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RANKING -->
+    <section class="bg-light fade">
+      <div class="section">
+        <h3 class="section-title">BEST SELLER</h3>
+
+        <div class="product-list">
+          <article class="card hover">
+            <span class="rank">1</span>
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+            <p class="product-name">Oak Table</p>
+          </article>
+          <article class="card hover">
+            <span class="rank">2</span>
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+            <p class="product-name">Floor Light</p>
+          </article>
+          <article class="card hover">
+            <span class="rank">3</span>
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
+            <p class="product-name">Fabric Rug</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="section fade">
+      <h3 class="section-title">FEATURE</h3>
+      <p class="section-lead">暮らしを整えるヒント。</p>
+
+      <div class="feature-list">
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+          <h4>穏やかな暮らしをつくる、リビングの整え方</h4>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+          <h4>素材から選ぶインテリア</h4>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+          <h4>ワンルームに、余白を</h4>
+        </article>
+      </div>
+    </section>
+
+    <!-- STYLING -->
+    <section class="bg-light fade">
+      <div class="section">
+        <h3 class="section-title">STYLING</h3>
+
+        <div class="feature-list">
+          <article class="card hover">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+            <h4>一人暮らしの余白</h4>
+          </article>
+          <article class="card hover">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+            <h4>家族で過ごすリビング</h4>
+          </article>
+          <article class="card hover">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+            <h4>静かな寝室</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section fade">
+      <h3 class="section-title">JOURNAL</h3>
+
+      <div class="feature-list">
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
+          <h4>暮らしに馴染む色の話</h4>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+          <h4>季節を感じるインテリア</h4>
+        </article>
+        <article class="card hover">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+          <h4>素材と向き合うということ</h4>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact fade">
+      <div class="contact-text">
+        <h2>CONTACT</h2>
+        <p>ご質問・ご相談はこちらから<br>店舗・オフィス・空間演出など法人様向けのご提案を行っています。</p>
+        <a href="#" class="btn">お問い合わせ</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© LENTO</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

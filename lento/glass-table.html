@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LENTO｜Take life a little slower.</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <!-- 1段目 -->
+        <div class="header-row header-top">
+            <div class="header-inner">
+                <div class="header-left"></div>
+
+                <h1 class="logo"><a href="index.html"><img src="/img/logo_br.svg" alt="LENTO"></a></h1>
+
+                <div class="header-right">
+                    <!-- SP 検索 -->
+                    <button class="sp-search-trigger sp-only" id="searchBtn">
+                        <span class="dli-search"></span>
+                    </button>
+
+                    <form class="search-form pc-only">
+                        <input type="search" placeholder="キーワードを入力">
+                    </form>
+
+                    <button class="hamburger sp-only" id="menuBtn">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2段目 -->
+        <div class="header-row header-bottom pc-only">
+            <div class="header-inner">
+                <nav class="global-nav">
+                    <ul>
+                        <li class="has-dropdown">
+                            <span class="drawer-trigger">PRODUCTS</span>
+                            <!-- ▼ PCドロワーメニュー -->
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                                    <li><a href="#">Chair</a></li>
+                                    <li><a href="#">Table</a></li>
+                                    <li><a href="#">Sofa</a></li>
+                                    <li><a href="#">Lighting</a></li>
+                                    <li><a href="#">Storage</a></li>
+                                    <li><a href="#">Accessory</a></li>
+                                </ul>
+                            </div>
+                            <!-- ▲ PCドロワーメニュー -->
+
+                        </li>
+                        <li><a href="#">FEATURE</a></li>
+                        <li><a href="#">STYLING HINT</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <a href="#" class="icon"><span class="dli-user"></span></a>
+                    <a href="#" class="icon"><span class="dli-cart"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="sp-search" id="spSearch">
+            <form class="search-form">
+                <input type="search" placeholder="キーワードを入力">
+            </form>
+        </div>
+    </header>
+
+    <!-- SP MENU -->
+    <nav class="sp-menu" id="spMenu">
+        <ul class="sp-menu-list">
+            <li>
+                <button class="sp-accordion">PRODUCTS<span></span></button>
+                <ul class="sp-submenu">
+                    <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                    <li><a href="#">Chair</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Sofa</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Storage</a></li>
+                    <li><a href="#">Accessory</a></li>
+                </ul>
+            </li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">STYLING HINT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main class="product-page">
+
+        <section class="product-main container">
+
+            <!-- ギャラリー -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <div class="main-track">
+                        <img src="img/thum_glass-table.jpg" alt="FRAME Glass Low Table 01">
+                        <img src="img/glass-table_02.jpg" alt="FRAME Glass Low Table 02">
+                        <img src="img/glass-table_03.jpg" alt="FRAME Glass Low Table 03">
+                        <img src="img/glass-table_04.jpg" alt="FRAME Glass Low Table 04">
+                    </div>
+
+                    <button class="main-prev" aria-label="Previous"></button>
+                    <button class="main-next" aria-label="Next"></button>
+                </div>
+
+                <ul class="thumb-list">
+                    <li><img src="img/thum_glass-table.jpg"></li>
+                    <li><img src="img/glass-table_02.jpg"></li>
+                    <li><img src="img/glass-table_03.jpg"></li>
+                    <li><img src="img/glass-table_04.jpg"></li>
+                </ul>
+            </div>
+
+            <!-- 商品 Info -->
+            <div class="product-info">
+
+                <h1 class="product-title">FRAME Glass Low Table</h1>
+
+                <p class="product-designer">LENTO Original Collection</p>
+
+                <p class="product-price">¥96,800</p>
+
+                <form class="product-options">
+
+                    <div class="option-group">
+                        <label>脚カラー</label>
+                        <select>
+                            <option>クローム</option>
+                            <option>マットブラック</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <!-- <p class="stock-status">SOLD OUT</p> -->
+
+                <div class="purchase-actions">
+                    <div class="quantity">
+                        <label>数量</label>
+                        <input type="number" min="1" value="1">
+                    </div>
+
+                    <button class="btn-add-cart">カートに入れる</button>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-wishlist">お気に入りに追加</button>
+                    <button class="btn-inquiry">この商品について問い合わせる</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="product-tabs container">
+            <div class="tabs-header">
+                <button data-tab="description" class="tab-btn active">商品説明</button>
+                <button data-tab="details" class="tab-btn">仕様・サイズ</button>
+                <button data-tab="shipping" class="tab-btn">送料・納期</button>
+            </div>
+
+            <div class="tab-content active container" id="description">
+                <p>
+                    FRAME Glass Low Tableは、無駄を削ぎ落とした構造美が際立つローテーブルです。
+                    透明感のある強化ガラス天板と、直線的なスチールフレームの組み合わせが、
+                    空間に軽やかさと洗練された印象をもたらします。
+                </p>
+                <p>
+                    約10mm厚の強化ガラスを使用し、日常使いに十分な耐久性を確保。
+                    脚部は安定感のあるスクエア設計で、リビングやラウンジスペースに
+                    さりげない存在感を与えます。
+                </p>
+                <p>
+                    ガラスの透明性によって空間に抜け感が生まれ、
+                    コンパクトなお部屋でも圧迫感を感じさせません。<br>
+                    ソファ前のセンターテーブルとしてはもちろん、
+                    モダンなワークスペースにもおすすめです。
+                </p>
+            </div>
+
+
+            <div class="tab-content container" id="details">
+                <ul>
+                    <li>サイズ：W1000 × D600 × H400mm</li>
+                    <li>天板厚：10mm（強化ガラス）</li>
+                    <li>素材：強化ガラス／スチール（粉体塗装またはクローム仕上げ）</li>
+                    <li>耐荷重：約30kg</li>
+                    <li>重量：約22kg</li>
+                    <li>組立：完成品</li>
+                    <li>保証期間：1年間（メーカー保証）</li>
+                </ul>
+            </div>
+
+
+            <div class="tab-content container" id="shipping">
+                <ul>
+                    <li>送料：全国一律 1,100円（税込）</li>
+                    <li>¥30,000以上のご購入で送料無料</li>
+                    <li>納期：在庫ありの場合 約5〜7営業日</li>
+                    <li>大型商品のため、配送時間帯指定は一部地域で不可の場合があります</li>
+                    <li>ガラス製品のため、開梱時は十分ご注意ください</li>
+                </ul>
+            </div>
+    <section class="new-arrivals related-products">
+      <div class="container">
+        <h2 class="section-title">Related Items
+          <span class="section-title-sub">オススメ商品</span>
+        </h2>
+        <div class="arrivals-wrapper">
+          <div class="arrivals-track">
+
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_leather-sofa01.jpg" alt="Leather Sofa">
+              </div>
+              <p class="arrival-name">Leather Sofa</p>
+              <p class="arrival-price">¥244,500</p>
+            </a>
+
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_floorlamp.jpg" alt="Modern Floor Lamp">
+              </div>
+              <p class="arrival-name">Modern Floor Lamp</p>
+              <p class="arrival-price">¥48,900</p>
+            </a>
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_fabric-sofa01.jpg" alt="Fabric Sofa">
+              </div>
+              <p class="arrival-name">Fabric Sofa</p>
+              <p class="arrival-price">¥136,800</p>
+            </a>
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_coffee-table.jpg" alt="Steal Coffee table">
+              </div>
+              <p class="arrival-name">Steal Coffee table</p>
+              <p class="arrival-price">¥89,500</p>
+            </a>
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_floorlamp02.jpg" alt="Artistic Floor Lamp">
+              </div>
+              <p class="arrival-name">Artistic Floor Lamp</p>
+              <p class="arrival-price">¥77,800</p>
+            </a>
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_poster02.jpg" alt="Monotone Art Poster">
+              </div>
+              <p class="arrival-name">Monotone Art Poster</p>
+              <p class="arrival-price">¥7,600</p>
+            </a>
+            <a href="#" class="arrival-item">
+              <div class="img-wrap">
+                <img src="img/thum_mirror.jpg" alt="Wall Mirror">
+              </div>
+              <p class="arrival-name">Wall Mirror</p>
+              <p class="arrival-price">¥24,300</p>
+            </a>
+          </div>
+        </div>
+        <div class="arrivals-dots"></div>
+      </div>
+    </section>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <p>© LENTO</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LENTO｜Take life a little slower.</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <!-- 1段目 -->
+    <div class="header-row header-top">
+      <div class="header-inner">
+        <div class="header-left"></div>
+
+        <h1 class="logo"><a href="index.html"><img src="/img/logo_br.svg" alt="LENTO"></a></h1>
+
+        <div class="header-right">
+          <!-- SP 検索 -->
+          <button class="sp-search-trigger sp-only" id="searchBtn">
+            <span class="dli-search"></span>
+          </button>
+
+          <form class="search-form pc-only">
+            <input type="search" placeholder="キーワードを入力">
+          </form>
+
+          <button class="hamburger sp-only" id="menuBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2段目 -->
+    <div class="header-row header-bottom pc-only">
+      <div class="header-inner">
+        <nav class="global-nav">
+          <ul>
+            <li class="has-dropdown">
+              <span class="drawer-trigger">PRODUCTS</span>
+              <!-- ▼ PCドロワーメニュー -->
+              <div class="dropdown">
+                <ul>
+                  <li><a href="product.html">NEW ARRIVALS</a></li>
+                  <li><a href="#">Chair</a></li>
+                  <li><a href="#">Table</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Lighting</a></li>
+                  <li><a href="#">Storage</a></li>
+                  <li><a href="#">Accessory</a></li>
+                </ul>
+              </div>
+              <!-- ▲ PCドロワーメニュー -->
+
+            </li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">STYLING HINT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons">
+          <a href="#" class="icon"><span class="dli-user"></span></a>
+          <a href="#" class="icon"><span class="dli-cart"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="sp-search" id="spSearch">
+      <form class="search-form">
+        <input type="search" placeholder="キーワードを入力">
+      </form>
+    </div>
+  </header>
+
+  <!-- SP MENU -->
+  <nav class="sp-menu" id="spMenu">
+    <ul class="sp-menu-list">
+      <li>
+        <button class="sp-accordion">PRODUCTS<span></span></button>
+        <ul class="sp-submenu">
+          <li><a href="product.html">NEW ARRIVALS</a></li>
+          <li><a href="#">Chair</a></li>
+          <li><a href="#">Table</a></li>
+          <li><a href="#">Sofa</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Accessory</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FEATURE</a></li>
+      <li><a href="#">STYLING HINT</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<main>
+
+  <section class="section product-archive">
+
+<aside class="category-sidebar pc-only">
+  <h2 class="sidebar-title">CATEGORY</h2>
+
+  <ul class="category-list">
+
+    <!-- シーン -->
+    <li class="category-item">
+      <button class="category-toggle">
+        シーンから探す <span></span>
+      </button>
+      <ul class="category-children">
+        <li><a href="#">ALL</a></li>
+        <li><a href="#">バレンタインギフト</a></li>
+        <li><a href="#">お祝いギフト</a></li>
+        <li><a href="#">誕生日/記念日ギフト</a></li>
+      </ul>
+    </li>
+
+    <!-- GO USER BUDGET -->
+    <li class="category-item">
+      <button class="category-toggle">
+        予算から探す <span></span>
+      </button>
+      <ul class="category-children">
+        <li><a href="#">ALL</a></li>
+        <li><a href="#">～3,000円</a></li>
+        <li><a href="#">3,000円～5,000円</a></li>
+        <li><a href="#">10,000円～30,000円</a></li>
+      </ul>
+    </li>
+
+    <!-- GOODS -->
+    <li class="category-item">
+      <button class="category-toggle">
+        GOODS <span></span>
+      </button>
+      <ul class="category-children">
+        <li><a href="#">テーブルウェア</a></li>
+        <li><a href="#">キッチンツール</a></li>
+        <li><a href="#">インテリア</a></li>
+        <li><a href="#">アート・カルチャー</a></li>
+      </ul>
+    </li>
+
+    <!-- ファッション -->
+    <li class="category-item">
+      <button class="category-toggle">
+        ファッション <span></span>
+      </button>
+      <ul class="category-children">
+        <li><a href="#">レディースウェア</a></li>
+        <li><a href="#">メンズウェア</a></li>
+        <li><a href="#">バッグ</a></li>
+        <li><a href="#">アクセサリー</a></li>
+      </ul>
+    </li>
+
+    <!-- FURNITURE -->
+    <li class="category-item">
+      <button class="category-toggle">
+        FURNITURE <span></span>
+      </button>
+      <ul class="category-children">
+        <li><a href="#">ソファ</a></li>
+        <li><a href="#">チェア</a></li>
+        <li><a href="#">テーブル・デスク</a></li>
+        <li><a href="#">収納家具</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</aside>
+
+
+    <div class="product-archive-main">
+
+      <h1 class="archive-title">NEW ARRIVALS</h1>
+
+      <ul class="product-grid">
+        <!-- 商品カード -->
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+          <p class="product-name">Oak Wood Chair</p>
+          <p class="price">¥32,000</p>
+        </li>
+
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+          <p class="product-name">Linen Sofa</p>
+          <p class="price">¥148,000</p>
+        </li>
+
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="">
+          <p class="product-name">Brass Table Lamp</p>
+          <p class="price">¥28,000</p>
+        </li>
+
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
+          <p class="product-name">Wool Rug 140×200</p>
+          <p class="price">¥42,000</p>
+        </li>
+
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+          <p class="product-name">Low Wooden Table</p>
+          <p class="price">¥56,000</p>
+        </li>
+
+        <li class="product-card hover">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+          <p class="product-name">Fabric Cushion</p>
+          <p class="price">¥8,800</p>
+        </li>
+      </ul>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+  <footer class="footer">
+    <p>© LENTO</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
