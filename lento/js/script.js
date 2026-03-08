@@ -246,7 +246,7 @@ document.addEventListener("mouseup", onEnd);
 /* SP */
 track.addEventListener("touchstart", onStart, { passive: true });
 track.addEventListener("touchmove", () => {}, { passive: true });
-track.addEventListener("touchend", onEnd);
+document.addEventListener("touchend", onEnd);
 
     window.addEventListener("resize", () => {
       current = 0;
