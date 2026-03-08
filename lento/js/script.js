@@ -228,7 +228,7 @@ function onEnd(e) {
 
   const diff = endX - startX;
 
-  const threshold = 60; // ← ここで感度調整（40〜60でOK）
+  const threshold = 40; // ← ここで感度調整（40〜60でOK）
 
   if (diff < -threshold && current < getTotalSlides() - 1) {
     current += 1;   // 必ず1スライドだけ進む
