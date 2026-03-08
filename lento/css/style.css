@@ -230,6 +230,7 @@ body {
 .arrivals-track {
   display: flex;
   gap: 24px;
+  touch-action: pan-y;
   transition: transform 0.5s ease;
 }
 
