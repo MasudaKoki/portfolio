@@ -117,7 +117,6 @@ dots.forEach((dot, index) => {
     }
 
 function onStart(e) {
-  e.preventDefault();  // ← 追加
   isDragging = true;
   startX = e.type.includes("mouse")
     ? e.clientX
