@@ -150,7 +150,7 @@ function onStart(e) {
     slider.addEventListener("mouseup", onEnd);
     slider.addEventListener("mouseleave", onEnd);
 
-slider.addEventListener("touchstart", onStart, { passive: true });
+slider.addEventListener("touchstart", onStart);
 slider.addEventListener("touchend", onEnd);
 
     updateSlider();
@@ -245,7 +245,7 @@ document.addEventListener("mouseup", onEnd);
 
 /* SP */
 track.addEventListener("touchstart", onStart, { passive: true });
-track.addEventListener("touchmove", onStart, { passive: true });
+track.addEventListener("touchmove", () => {}, { passive: true });
 track.addEventListener("touchend", onEnd);
 
     window.addEventListener("resize", () => {
