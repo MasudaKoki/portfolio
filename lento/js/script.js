@@ -195,123 +195,147 @@ document.addEventListener("DOMContentLoaded", function () {
     startAuto();
   }
 
-  /* =====================
-     共通スナップスライダー関数
-  ===================== */
+/* =====================
+   共通スナップスライダー関数
+===================== */
 
-  function enableSnapSlider(sectionSelector, trackSelector, itemSelector, dotsSelector, visiblePC, visibleSP) {
+function enableSnapSlider(sectionSelector, trackSelector, itemSelector, dotsSelector, visiblePC, visibleSP) {
 
-    const section = document.querySelector(sectionSelector);
-    const track = section?.querySelector(trackSelector);
-    const items = section?.querySelectorAll(itemSelector);
-    const dotsContainer = section?.querySelector(dotsSelector);
+  const section = document.querySelector(sectionSelector);
+  const track = section?.querySelector(trackSelector);
+  const items = section?.querySelectorAll(itemSelector);
+  const dotsContainer = section?.querySelector(dotsSelector);
 
-    if (!track || !items.length || !dotsContainer) return;
+  if (!track || !items.length || !dotsContainer) return;
 
-    let current = 0;
-    let startX = 0;
-    let currentX = 0;
-    let isDragging = false;
+  let current = 0;
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+  let moved = false;
+  let suppressClick = false;
 
-    track.querySelectorAll("img").forEach(img => {
-      img.draggable = false;
-    });
+  track.querySelectorAll("img").forEach(img => {
+    img.draggable = false;
+  });
 
-    track.querySelectorAll("a").forEach(link => {
-      link.addEventListener("dragstart", e => e.preventDefault());
-    });
+  function getVisibleCount() {
+    return window.innerWidth <= 768 ? visibleSP : visiblePC;
+  }
 
-    function getVisibleCount() {
-      return window.innerWidth <= 768 ? visibleSP : visiblePC;
+  function getTotalSlides() {
+    return Math.ceil(items.length / getVisibleCount());
+  }
+
+  function createDots() {
+    dotsContainer.innerHTML = "";
+
+    for (let i = 0; i < getTotalSlides(); i++) {
+      const dot = document.createElement("button");
+      if (i === current) dot.classList.add("active");
+      dotsContainer.appendChild(dot);
+
+      dot.addEventListener("click", () => {
+        current = i;
+        updateSlider();
+      });
     }
+  }
 
-    function getTotalSlides() {
-      return Math.ceil(items.length / getVisibleCount());
+  function updateSlider() {
+    const visible = getVisibleCount();
+    const itemWidth = items[0].getBoundingClientRect().width;
+    const gap = 24;
+
+    track.style.transform =
+      `translateX(-${current * (itemWidth + gap) * visible}px)`;
+
+    dotsContainer.querySelectorAll("button").forEach(d =>
+      d.classList.remove("active")
+    );
+    dotsContainer.children[current]?.classList.add("active");
+  }
+
+  function getPointerX(e) {
+    if (e.type.includes("mouse")) return e.clientX;
+    if (e.touches && e.touches[0]) return e.touches[0].clientX;
+    if (e.changedTouches && e.changedTouches[0]) return e.changedTouches[0].clientX;
+    return currentX;
+  }
+
+  function onStart(e) {
+    isDragging = true;
+    moved = false;
+    startX = getPointerX(e);
+    currentX = startX;
+  }
+
+  function onMove(e) {
+    if (!isDragging) return;
+
+    currentX = getPointerX(e);
+
+    if (Math.abs(currentX - startX) > 10) {
+      moved = true;
     }
+  }
 
-    function createDots() {
-      dotsContainer.innerHTML = "";
-      for (let i = 0; i < getTotalSlides(); i++) {
-        const dot = document.createElement("button");
-        if (i === current) dot.classList.add("active");
-        dotsContainer.appendChild(dot);
+  function onEnd(e) {
+    if (!isDragging) return;
 
-        dot.addEventListener("click", () => {
-          current = i;
-          updateSlider();
-        });
-      }
-    }
+    isDragging = false;
 
-    function updateSlider() {
-      const visible = getVisibleCount();
-      const itemWidth = items[0].getBoundingClientRect().width;
-      const gap = 24;
+    const endX = getPointerX(e);
+    const diff = endX - startX;
+    const threshold = 50;
 
-      track.style.transform =
-        `translateX(-${current * (itemWidth + gap) * visible}px)`;
-
-      dotsContainer.querySelectorAll("button").forEach(d =>
-        d.classList.remove("active")
-      );
-      dotsContainer.children[current]?.classList.add("active");
-    }
-
-    function getPointerX(e) {
-      if (e.type.includes("mouse")) return e.clientX;
-      if (e.touches && e.touches[0]) return e.touches[0].clientX;
-      if (e.changedTouches && e.changedTouches[0]) return e.changedTouches[0].clientX;
-      return currentX;
-    }
-
-    function onStart(e) {
-      isDragging = true;
-      startX = getPointerX(e);
-      currentX = startX;
-    }
-
-    function onMove(e) {
-      if (!isDragging) return;
-      currentX = getPointerX(e);
-    }
-
-    function onEnd(e) {
-      if (!isDragging) return;
-      isDragging = false;
-
-      const endX = getPointerX(e);
-      const diff = endX - startX;
-      const threshold = 50;
-
-      if (diff < -threshold && current < getTotalSlides() - 1) {
-        current += 1;
-      } else if (diff > threshold && current > 0) {
-        current -= 1;
-      }
-
+    if (diff < -threshold && current < getTotalSlides() - 1) {
+      current += 1;
       updateSlider();
+      suppressClick = true;
+    } else if (diff > threshold && current > 0) {
+      current -= 1;
+      updateSlider();
+      suppressClick = true;
     }
 
-    /* PC */
-    track.addEventListener("mousedown", onStart);
-    document.addEventListener("mousemove", onMove);
-    document.addEventListener("mouseup", onEnd);
+    if (suppressClick) {
+      setTimeout(() => {
+        suppressClick = false;
+      }, 0);
+    }
+  }
 
-    /* SP */
-    track.addEventListener("touchstart", onStart, { passive: true });
-    track.addEventListener("touchmove", onMove, { passive: true });
-    document.addEventListener("touchend", onEnd);
-    document.addEventListener("touchcancel", onEnd);
-
-    window.addEventListener("resize", () => {
-      current = Math.min(current, getTotalSlides() - 1);
-      createDots();
-      updateSlider();
+  /* ドラッグ直後の誤クリック防止 */
+  track.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      if (suppressClick || moved) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
     });
+  });
 
+  /* PC */
+  track.addEventListener("mousedown", onStart);
+  document.addEventListener("mousemove", onMove);
+  document.addEventListener("mouseup", onEnd);
+
+  /* SP */
+  track.addEventListener("touchstart", onStart, { passive: true });
+  track.addEventListener("touchmove", onMove, { passive: true });
+  document.addEventListener("touchend", onEnd);
+  document.addEventListener("touchcancel", onEnd);
+
+  window.addEventListener("resize", () => {
+    current = Math.min(current, getTotalSlides() - 1);
     createDots();
     updateSlider();
-  }
+  });
+
+  createDots();
+  updateSlider();
+}
 
   /* =====================
      NEW ARRIVALS
