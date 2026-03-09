@@ -371,9 +371,9 @@ const mainSlides = document.querySelectorAll(".main-track img");
 const thumbs = document.querySelectorAll(".thumb-list img");
 const prevBtn = document.querySelector(".main-prev");
 const nextBtn = document.querySelector(".main-next");
-const container = document.querySelector(".main-image");
+const mainContainer = document.querySelector(".main-image");
 
-if (mainTrack && mainSlides.length && container) {
+if (mainTrack && mainSlides.length && mainContainer) {
 
   let current = 1;
   let startX = 0;
@@ -444,8 +444,9 @@ if (mainTrack && mainSlides.length && container) {
     });
   });
 
-  /* PC */
-  container.addEventListener("mousedown", (e) => {
+  /* PCドラッグ */
+  mainContainer.addEventListener("mousedown", (e) => {
+    e.preventDefault(); // ← これを戻す
     isDown = true;
     moved = false;
     startX = e.clientX;
@@ -462,6 +463,7 @@ if (mainTrack && mainSlides.length && container) {
 
   document.addEventListener("mouseup", () => {
     if (!isDown) return;
+
     isDown = false;
 
     const diff = startX - currentX;
@@ -473,17 +475,17 @@ if (mainTrack && mainSlides.length && container) {
     if (diff < -threshold) prevSlide();
   });
 
-  /* SP */
-  container.addEventListener("touchstart", (e) => {
+  /* SPスワイプ */
+  mainContainer.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
     currentX = startX;
   }, { passive: true });
 
-  container.addEventListener("touchmove", (e) => {
+  mainContainer.addEventListener("touchmove", (e) => {
     currentX = e.touches[0].clientX;
   }, { passive: true });
 
-  container.addEventListener("touchend", () => {
+  mainContainer.addEventListener("touchend", () => {
     const diff = startX - currentX;
     const threshold = 60;
 
