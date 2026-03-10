@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515.65 411.2">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #3f3932;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g id="_グループ_4" data-name="グループ 4">
+      <line id="_線_1" data-name="線 1" class="cls-3" y1="10" x2="104.95" y2="10"/>
+      <line id="_線_2" data-name="線 2" class="cls-2" x1="104.95" y1="10" x2="190.81" y2="296.21"/>
+      <line id="_線_4" data-name="線 4" class="cls-2" x1="190.81" y1="296.21" x2="410.24" y2="296.21"/>
+      <line id="_線_5" data-name="線 5" class="cls-2" x1="410.24" y1="296.21" x2="505.65" y2="86.32"/>
+      <line id="_線_6" data-name="線 6" class="cls-3" x1="171.73" y1="86.32" x2="505.65" y2="86.32"/>
+      <g id="_楕円形_4" data-name="楕円形 4">
+        <circle class="cls-1" cx="238.51" cy="367.77" r="42.93"/>
+        <circle class="cls-3" cx="238.51" cy="367.77" r="30.53"/>
+      </g>
+      <g id="_楕円形_5" data-name="楕円形 5">
+        <circle class="cls-1" cx="372.08" cy="367.77" r="42.93"/>
+        <circle class="cls-3" cx="372.08" cy="367.77" r="30.53"/>
+      </g>
+    </g>
+  </g>
+</svg>
