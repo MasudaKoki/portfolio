@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LENTO｜静かで心地よい暮らしのためのインテリアショップ</title>
-  <meta name="description" content="LENTOは、静かで心地よい暮らしを提案するインテリアショップです。新着商品、ランキング、特集、スタイリングヒントを通して、長く使える家具と暮らしのアイデアをご紹介します。"  />
+  <meta name="description"
+    content="LENTOは、静かで心地よい暮らしを提案するインテリアショップです。新着商品、ランキング、特集、スタイリングヒントを通して、長く使える家具と暮らしのアイデアをご紹介します。" />
   <link rel="canonical" href="https://masudakoki.github.io/portfolio/lento/index.html" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#f6f6f4" />
@@ -21,7 +22,7 @@
   <meta name="twitter:title" content="LENTO｜静かで心地よい暮らしのためのインテリアショップ" />
   <meta name="twitter:description" content="新着商品、ランキング、特集、スタイリングヒントを通して、心地よい暮らしのための家具とアイデアをご紹介します。" />
   <meta name="twitter:image" content="https://masudakoki.github.io/portfolio/lento/img/ogp_top.jpg" />
-  <link rel="icon" href="img/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/logo_favicon.svg" sizes="any" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
@@ -40,7 +41,7 @@
         <div class="header-right">
           <!-- SP 検索 -->
           <button class="sp-search-trigger sp-only" id="searchBtn">
-            <span class="dli-search"></span>
+            <img src="img/icon_search.svg" alt="LENTO">
           </button>
 
           <form class="search-form pc-only">
@@ -86,8 +87,8 @@
         </nav>
 
         <div class="header-icons">
-          <a href="#" class="icon"><span class="dli-user"></span></a>
-          <a href="#" class="icon"><span class="dli-cart"></span></a>
+          <a href="#" class="icon"><img src="img/icon_my.svg" alt="user"></a>
+          <a href="#" class="icon"><img src="img/icon_cart.svg" alt="shopping cart"></a>
         </div>
       </div>
     </div>
@@ -100,6 +101,27 @@
 
   <!-- SP MENU -->
   <nav class="sp-menu" id="spMenu">
+    <div class="sp-menu-user">
+
+      <ul class="sp-user-nav">
+        <li>
+          <a href="#">
+            <img src="img/icon_my.svg" alt="">
+            マイページ
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="img/icon_cart.svg" alt="">
+            カート
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="sp-register-btn">新規会員登録</a>
+
+    </div>
     <ul class="sp-menu-list">
       <li>
         <button class="sp-accordion">PRODUCTS<span></span></button>
@@ -185,8 +207,7 @@
 
         <a href="feature_01.html" class="feature-item">
           <div class="img-wrap">
-            <img src="img/feature_thum_02.jpg"
-              alt="Refresh Your Space — Spring 2026">
+            <img src="img/feature_thum_02.jpg" alt="Refresh Your Space — Spring 2026">
           </div>
           <p class="feature-copy">Refresh Your Space — Spring 2026</p>
         </a>
