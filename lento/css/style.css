@@ -1215,7 +1215,7 @@ FEATURE PAGE
 ================================= */
 
 .lento-feature {
-  padding: 80px 0;
+  padding-bottom: 80px;
 }
 
 .feature-container {
@@ -1236,8 +1236,7 @@ FEATURE PAGE
 
 .feature-title {
   font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   font-weight: 600;
 }
 
@@ -1251,7 +1250,7 @@ FEATURE PAGE
 
 .feature-lead {
   max-width: 720px;
-  margin: 0 auto 50px;
+  margin: 30px auto;
   line-height: 2;
   font-size: 16px;
 }
