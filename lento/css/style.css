@@ -62,9 +62,10 @@ body {
   width: 100%;
 }
 
-.hero-slider-track {
+.hero-slider-track{
   position: relative;
   height: 70vh;
+  max-height: 560px;
 }
 
 @media (max-width: 768px) {
