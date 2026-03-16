@@ -222,6 +222,91 @@ body {
 }
 
 /* =====================
+   PRODUCT CATEGORY
+===================== */
+.category-section {
+  padding: 0;
+}
+
+.category-section .container {
+  margin-top: 120px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 24px;
+}
+
+.category-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-card-image {
+  overflow: hidden;
+  background: #ece9e3;
+  aspect-ratio: 4 / 2.8;
+}
+
+.category-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease, opacity .4s ease;
+}
+
+.category-card:hover .category-card-image img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.category-card-body {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.category-card-title {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #3f3a34;
+}
+
+.category-card-sub {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .category-section .container {
+    margin-top: 80px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 12px;
+  }
+
+  .category-card-body {
+    padding-top: 10px;
+  }
+
+  .category-card-title {
+    font-size: 16px;
+  }
+
+  .category-card-sub {
+    font-size: 11px;
+  }
+}
+
+/* =====================
    NEW ARRIVALS SLIDER
 ===================== */
 
