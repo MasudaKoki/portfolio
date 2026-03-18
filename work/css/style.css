@@ -347,6 +347,10 @@ img {
 .article-title {
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
 }
 
 .article-body {
