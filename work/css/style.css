@@ -348,7 +348,7 @@ img {
   margin-bottom: 30px;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.12em;
 }
@@ -386,7 +386,22 @@ img {
   line-height: 1.8;
   margin-bottom: 30px;
 }
-
+.fix_box{
+  width: 200px;
+  line-height: 40px;
+  background-color: #a3bb95;
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  text-align: center;
+  border-radius: 20px;
+}
+.fix_box a{
+  color: #fff;
+}
+.fix_box:hover{
+  background-color: #737d6d;
+}
 .home-link {
   text-align: center;
 }
