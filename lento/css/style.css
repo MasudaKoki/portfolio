@@ -1379,7 +1379,7 @@ BLOCK
 
 .feature-text {
   width: 50%;
-  background: #fff;
+  background-color: rgba(240, 240, 240, 0.9);
   padding: 40px;
   line-height: 2;
   position: absolute;
@@ -1490,6 +1490,7 @@ SP
 .feature-image,
 .feature-text {
   width: 100%;
+  background-color: #fff;
   position: static;
 }
 
