@@ -1335,10 +1335,11 @@ FEATURE PAGE
 }
 
 .feature-lead {
-  max-width: 720px;
+  max-width: 800px;
   margin: 30px auto;
   line-height: 2;
-  font-size: 16px;
+  font-size: 18px;
+  text-align: left;
 }
 
 .feature-hero-img img {
